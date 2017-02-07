@@ -1,0 +1,6 @@
+c:\users\n1260298\documents\visual studio 2015\Projects\firstweb\firstweb\bin\firstweb.dll.config
+c:\users\n1260298\documents\visual studio 2015\Projects\firstweb\firstweb\bin\firstweb.dll
+c:\users\n1260298\documents\visual studio 2015\Projects\firstweb\firstweb\bin\firstweb.pdb
+c:\users\n1260298\documents\visual studio 2015\Projects\firstweb\firstweb\obj\Debug\firstweb.csprojResolveAssemblyReference.cache
+c:\users\n1260298\documents\visual studio 2015\Projects\firstweb\firstweb\obj\Debug\firstweb.dll
+c:\users\n1260298\documents\visual studio 2015\Projects\firstweb\firstweb\obj\Debug\firstweb.pdb

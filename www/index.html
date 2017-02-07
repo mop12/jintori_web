@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="components/loader.js"></script>
+    <script src="js/niftylogin.js"></script>
+    <script src="js/ppp.js"></script>
+    <style>
+        body{
+            background-color: #BBDEFB;
+            padding-top: 20px;
+            font-family: Verdana, sans-serif;
+        }
+        form{
+            padding: 30px auto;
+            text-align: center;
+        }
+        input{
+        border-radius: 5px;
+        padding: 7px;
+        margin-bottom: 10px;
+        width: 200px;
+        font-size: 20px;
+        
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" id="username" placeholder="User name" />
+        <input type="password" id="password" placeholder="Password" />
+        <input type="radio" name="color" value="red" checked>赤
+        <input type="radio" name="color" value="blue">青
+        <input type="radio" name="color" value="yellow">黄
+        <input type="submit" value="Register/Login" />
+    </form>
+
+
+</body>
+</html>
