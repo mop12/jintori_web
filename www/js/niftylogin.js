@@ -6,8 +6,8 @@
 
   
        $(function(){
-           var application_key = "YOURAPIKEY";
-           var client_key = "YOURCLIENTKEY";
+           var application_key = "APIKEY";
+           var client_key = "CLIKEY";
            var ncmb = new NCMB(application_key,client_key);
            
            var user = ncmb.User.getCurrentUser();
@@ -45,7 +45,7 @@
                          .then(function(){
                             //alert("新規登録＆ログイン成功");
                             location.href = "./game.html";
-               })
+                        })
               
 
                    })
