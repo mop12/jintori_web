@@ -59,33 +59,6 @@ function initMap() {
     };
 
 
-    /*  rectangle[1].fillOpacity = 0.3;
-      rectangle[1].fillColor = 'red';
-      rectangle[60].fillOpacity = 0.3;
-      rectangle[60].fillColor = 'blue';
-  
-      console.log(rectangle)*/
-
-
-    /*  var rectangle5 = new google.maps.Rectangle({
-          strokeColor: '#FF0000',
-          strokeOpacity: 0.8,
-          strokeWeight: 2,
-          fillColor: '#FF0000',
-          fillOpacity: 0.00,
-          map: map,
-          bounds: {
-              north: 35.474000,
-              south: 35.438000,
-              east: 139.635000,
-              west: 139.599000
-          }*/
-
-
-
-
-
-
 
 
 
@@ -142,17 +115,13 @@ function initMap() {
                 ii++
                 count2++
             }
+
             jj++
         }
 
 
         console.log(nowido, nowkeido);
-
         console.log(latLng)
-
-
-
-
 
 
 
@@ -181,31 +150,30 @@ function initMap() {
         } else {
 
             if (rectangle[cct].fillcolor != "red") {
-                       $(function(){
-                           var application_key = "YOURAPIKEY";
-                           var client_key = "YOURCLIENTKEY";
-           var ncmb = new NCMB(application_key,client_key);
+                    $(function(){
+                        var application_key = "APIKEY";
+                        var client_key = "CLIKEY";
+                        var ncmb = new NCMB(application_key,client_key);
 
-// カレントユーザ情報の取得
-var currentUser = ncmb.User.getCurrentUser();
-if (currentUser) {
-     var your_color = currentUser.get("color");
-     console.log(your_color);
-     console.log(String(your_color));
+                        // カレントユーザ情報の取得
+                        var currentUser = ncmb.User.getCurrentUser();
+                        if (currentUser) {
+                            var your_color = currentUser.get("color");
+                            console.log(your_color);
+                            console.log(String(your_color));
      
-                rectangle[cct].fillColor =  String(your_color);
-                rectangle[cct].fillOpacity = 0.3;
-                console.log(rectangle[cct].fillcolor);
-                console.log(rectangle[60].fillColor);
-                console.log(rectangle[53].fillColor);
+                            rectangle[cct].fillColor =  String(your_color);
+                            rectangle[cct].fillOpacity = 0.3;
+                            console.log(rectangle[cct].fillcolor);
+                            console.log(rectangle[60].fillColor);
+                            console.log(rectangle[53].fillColor);
+                            console.log("ログイン中のユーザー: " + currentUser.get("color"));
 
-    console.log("ログイン中のユーザー: " + currentUser.get("color"));
-} else {
-    console.log("未ログインまたは取得に失敗");
-}
-});
-
-               
+                        } else {
+                            console.log("未ログインまたは取得に失敗");
+                        }
+                    }
+                );
 
             }
 
@@ -215,12 +183,6 @@ if (currentUser) {
 
 
     });
-
-
-
-
-
-
 
 
 };
